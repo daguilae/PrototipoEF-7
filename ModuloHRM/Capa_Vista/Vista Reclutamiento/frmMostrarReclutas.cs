@@ -28,13 +28,15 @@ namespace Capa_Vista.Vista_Reclutamiento
         public void funcMostrarTabla()
         {
 
-            
-           
+
+            DataTable dt = Cont_R.funcTablaBancoTalento(Estado, NoEntrevistado);
+            dgvMostrarReclutas.DataSource = dt;
+            funcNombresEncabezados();
 
 
         }
 
-      
+
         //función para cambiarle el nombre a las columnas del datagrid al momento de mostrar todos los datos
         public void funcNombresEncabezados()
         {
@@ -51,7 +53,7 @@ namespace Capa_Vista.Vista_Reclutamiento
             dgvMostrarReclutas.Columns[10].HeaderText = "Profesión";
             dgvMostrarReclutas.Columns[11].HeaderText = "Nivel Formación Académica";
 
-         
+
         }
         //función que bloquea todos los txt
         public void funcBloqueoTxt()
@@ -187,34 +189,52 @@ namespace Capa_Vista.Vista_Reclutamiento
         //Evento KeyUp para realizar el filtrado de los datos por id 
         private void txtIdEmpleado_KeyUp(object sender, KeyEventArgs e)
         {
-            
+            string Parametro = txtIdRecluta.Text;
+            DataTable dt = Cont_R.funcTablaBancoTalentoId(Estado, NoEntrevistado, Parametro);
+            dgvMostrarReclutas.DataSource = dt;
+            funcNombresEncabezados();
 
         }
         //Evento KeyUp para realizar el filtrado de los datos por primer nombre
         private void txtPrimerNombre_KeyUp(object sender, KeyEventArgs e)
         {
-           
+            string Parametro = txtPrimerNombre.Text;
+            DataTable dt = Cont_R.funcTablaBancoTalentoNombre(Estado, NoEntrevistado, Parametro);
+            dgvMostrarReclutas.DataSource = dt;
+            funcNombresEncabezados();
 
         }
         //Evento KeyUp para realizar el filtrado de los datos por primer apellido
         private void txtPrimerApellido_KeyUp(object sender, KeyEventArgs e)
         {
-            
+            string Parametro = txtPrimerApellido.Text;
+            DataTable dt = Cont_R.funcTablaBancoTalentoApellido(Estado, NoEntrevistado, Parametro);
+            dgvMostrarReclutas.DataSource = dt;
+            funcNombresEncabezados();
         }
         //Evento KeyUp para realizar el filtrado de los datos por puesto
         private void txtPuesto_KeyUp(object sender, KeyEventArgs e)
         {
-           
+            string Parametro = txtPuesto.Text;
+            DataTable dt = Cont_R.funcTablaBancoTalentoPuesto(Estado, NoEntrevistado, Parametro);
+            dgvMostrarReclutas.DataSource = dt;
+            funcNombresEncabezados();
         }
         //Evento KeyUp para realizar el filtrado de los datos por departamento
         private void txtDepartamento_KeyUp(object sender, KeyEventArgs e)
         {
-            
+            string Parametro = txtDepartamento.Text;
+            DataTable dt = Cont_R.funcTablaBancoTalentoDepartamento(Estado, NoEntrevistado, Parametro);
+            dgvMostrarReclutas.DataSource = dt;
+            funcNombresEncabezados();
         }
         //Evento KeyUp para realizar el filtrado de los datos por profesion
         private void txtProfesion_KeyUp(object sender, KeyEventArgs e)
         {
-            
+            string Parametro = txtProfesion.Text;
+            DataTable dt = Cont_R.funcTablaBancoTalentoProfesion(Estado, NoEntrevistado, Parametro);
+            dgvMostrarReclutas.DataSource = dt;
+            funcNombresEncabezados();
         }
         //se coloca un máximo de dígitos para el textbox del id
         private void frmMostrarReclutas_Load(object sender, EventArgs e)
@@ -234,6 +254,6 @@ namespace Capa_Vista.Vista_Reclutamiento
             funcMostrarTabla();
         }
 
-      
+
     }
 }

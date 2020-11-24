@@ -28,7 +28,9 @@ namespace Capa_Vista.Vista_Reclutamiento
         public void funcMostrarTabla()
         {
 
-          
+            DataTable dt = Cont_R.funcTablaBancoTalento(Candidatos, SegundaOpcion);
+            dgvMostrarBancoTalento.DataSource = dt;
+            funcNombresEncabezados();
 
 
         }
@@ -193,32 +195,50 @@ namespace Capa_Vista.Vista_Reclutamiento
         //Evento KeyUp para realizar el filtrado de los datos por id 
         private void txtIdRecluta_KeyUp(object sender, KeyEventArgs e)
         {
-            
+            string Parametro = txtIdRecluta.Text;
+            DataTable dt = Cont_R.funcTablaBancoTalentoId(Candidatos, SegundaOpcion, Parametro);
+            dgvMostrarBancoTalento.DataSource = dt;
+            funcNombresEncabezados();
         }
         //Evento KeyUp para realizar el filtrado de los datos por primer nombre
         private void txtPrimerNombre_KeyUp(object sender, KeyEventArgs e)
         {
-            
+            string Parametro = txtPrimerNombre.Text;
+            DataTable dt = Cont_R.funcTablaBancoTalentoNombre(Candidatos, SegundaOpcion, Parametro);
+            dgvMostrarBancoTalento.DataSource = dt;
+            funcNombresEncabezados();
         }
         //Evento KeyUp para realizar el filtrado de los datos por primer apellido
         private void txtPrimerApellido_KeyUp(object sender, KeyEventArgs e)
         {
-            
+            string Parametro = txtPrimerApellido.Text;
+            DataTable dt = Cont_R.funcTablaBancoTalentoApellido(Candidatos, SegundaOpcion, Parametro);
+            dgvMostrarBancoTalento.DataSource = dt;
+            funcNombresEncabezados();
         }
         //Evento KeyUp para realizar el filtrado de los datos por puesto
         private void txtPuesto_KeyUp(object sender, KeyEventArgs e)
         {
-            
+            string Parametro = txtPuesto.Text;
+            DataTable dt = Cont_R.funcTablaBancoTalentoPuesto(Candidatos, SegundaOpcion, Parametro);
+            dgvMostrarBancoTalento.DataSource = dt;
+            funcNombresEncabezados();
         }
         //Evento KeyUp para realizar el filtrado de los datos por departamento
         private void txtDepartamento_KeyUp(object sender, KeyEventArgs e)
         {
-           
+            string Parametro = txtDepartamento.Text;
+            DataTable dt = Cont_R.funcTablaBancoTalentoDepartamento(Candidatos, SegundaOpcion, Parametro);
+            dgvMostrarBancoTalento.DataSource = dt;
+            funcNombresEncabezados();
         }
         //Evento KeyUp para realizar el filtrado de los datos por profesion
         private void txtProfesion_KeyUp(object sender, KeyEventArgs e)
         {
-            
+            string Parametro = txtProfesion.Text;
+            DataTable dt = Cont_R.funcTablaBancoTalentoProfesion(Candidatos, SegundaOpcion, Parametro);
+            dgvMostrarBancoTalento.DataSource = dt;
+            funcNombresEncabezados();
         }
         //Se muestran nuevamente todos los datos de la entidad Empleado
         private void btnMostrarTodo_Click(object sender, EventArgs e)

@@ -1,0 +1,9 @@
+C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Controlador\bin\Debug\Capa_Controlador.dll
+C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Controlador\bin\Debug\Capa_Controlador.pdb
+C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Controlador\bin\Debug\Capa_Modelo.dll
+C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Controlador\bin\Debug\Capa_Modelo.pdb
+C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Controlador\obj\Debug\Capa_Controlador.csprojAssemblyReference.cache
+C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Controlador\obj\Debug\Capa_Controlador.csproj.CoreCompileInputs.cache
+C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Controlador\obj\Debug\Capa_Controlador.csproj.CopyComplete
+C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Controlador\obj\Debug\Capa_Controlador.dll
+C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Controlador\obj\Debug\Capa_Controlador.pdb

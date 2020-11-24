@@ -27,8 +27,10 @@ namespace Capa_Vista.Vista_Reclutamiento
         public void funcMostrarTabla()
         {
 
-            
-            
+
+            DataTable dt = Cont_R.funcTablaEmpleado(Estado);
+            dgvMostrarEmpleados.DataSource = dt;
+            funcNombresEncabezados();
 
         }
         //función para cambiarle el nombre a las columnas del datagrid para el filtrado de datos
@@ -51,7 +53,7 @@ namespace Capa_Vista.Vista_Reclutamiento
             dgvMostrarEmpleados.Columns[9].HeaderText = "Num. IGSS";
             dgvMostrarEmpleados.Columns[10].HeaderText = "Tipo Licencia";
             dgvMostrarEmpleados.Columns[11].HeaderText = "Num.Cuenta Bancaria";
-            
+
         }
         //función que bloquea todos los txt
         public void funcBloqueoTxt()
@@ -171,29 +173,46 @@ namespace Capa_Vista.Vista_Reclutamiento
         //Evento KeyUp para realizar el filtrado de los datos por id 
         private void txtIdEmpleado_KeyUp(object sender, KeyEventArgs e)
         {
-           
+            string Parametro = txtIdEmpleado.Text;
+
+
+            DataTable dt = Cont_R.funcFiltradoIdEmpleado(Parametro, Estado);
+            dgvMostrarEmpleados.DataSource = dt;
+            funcNombresParametros();
         }
         //Evento KeyUp para realizar el filtrado de los datos por primer nombre
         private void txtPrimerNombre_KeyUp(object sender, KeyEventArgs e)
         {
-            
+            string Parametro = txtPrimerNombre.Text;
+            DataTable dt = Cont_R.funcFiltradoNombreEmpleado(Parametro, Estado);
+            dgvMostrarEmpleados.DataSource = dt;
+            funcNombresParametros();
         }
         //Evento KeyUp para realizar el filtrado de los datos por primer apellido
         private void txtPrimerApellido_KeyUp(object sender, KeyEventArgs e)
         {
-            
+            string Parametro = txtPrimerApellido.Text;
+            DataTable dt = Cont_R.funcFiltradoApellidoEmpleado(Parametro, Estado);
+            dgvMostrarEmpleados.DataSource = dt;
+            funcNombresParametros();
         }
 
         //Evento KeyUp para realizar el filtrado de los datos por puesto
         private void txtPuesto_KeyUp(object sender, KeyEventArgs e)
         {
-           
+            string Parametro = txtPuesto.Text;
+            DataTable dt = Cont_R.funcFiltradoPuestoEmpleado(Parametro, Estado);
+            dgvMostrarEmpleados.DataSource = dt;
+            funcNombresParametros();
 
         }
         //Evento KeyUp para realizar el filtrado de los datos por departamento
         private void txtDepartamento_KeyUp(object sender, KeyEventArgs e)
         {
-           
+            string Parametro = txtDepartamento.Text;
+            DataTable dt = Cont_R.funcFiltradoDepartamentoEmpleado(Parametro, Estado);
+            dgvMostrarEmpleados.DataSource = dt;
+            funcNombresParametros();
         }
 
         //Se muestran nuevamente todos los datos de la entidad Empleado
