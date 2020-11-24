@@ -1,0 +1,6 @@
+C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Modelo\bin\Debug\Capa_Modelo.dll
+C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Modelo\bin\Debug\Capa_Modelo.pdb
+C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Modelo\obj\Debug\Capa_Modelo.csprojAssemblyReference.cache
+C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Modelo\obj\Debug\Capa_Modelo.csproj.CoreCompileInputs.cache
+C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Modelo\obj\Debug\Capa_Modelo.dll
+C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Modelo\obj\Debug\Capa_Modelo.pdb
