@@ -16,14 +16,9 @@ C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Vista\obj\Debug\Capa_Vista.csproj.G
 C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Vista\obj\Debug\Capa_Vista.csproj.CoreCompileInputs.cache
 C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Vista\bin\Debug\Capa_Vista.dll
 C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Vista\bin\Debug\Capa_Vista.pdb
-C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Vista\bin\Debug\AxShockwaveFlashObjects.dll
 C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Vista\bin\Debug\CapaVistaNavegador.dll
 C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Vista\bin\Debug\CapaVistaSeguridad.dll
 C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Vista\bin\Debug\Capa_Controlador.dll
-C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Vista\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
-C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Vista\bin\Debug\CrystalDecisions.ReportSource.dll
-C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Vista\bin\Debug\CrystalDecisions.Shared.dll
-C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Vista\bin\Debug\CrystalDecisions.Windows.Forms.dll
 C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Vista\bin\Debug\Capa_Modelo.dll
 C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Vista\bin\Debug\CapaVistaReporteador.dll
 C:\Users\TheVolts\PrototipoEF\ModuloHRM\Capa_Vista\bin\Debug\CapaVista.dll
